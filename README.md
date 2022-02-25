@@ -6,6 +6,9 @@ This repository contains a minimal UI front-end in React, for creating NFT drop 
 
 It also includes the option to accept credit cards via Crossmint (which takes under 5 min to set up as well).
 
+<img width="544" alt="Example image" src="https://user-images.githubusercontent.com/93743232/155666012-2e0d3788-531f-435b-8466-4af89df816f7.png">
+
+
 ## Set up
 
 Make sure you have `yarn` and `git` installed. Then run:

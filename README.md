@@ -39,4 +39,17 @@ You can now accept credit card payments -- and you'll get all the money from pur
 
 Run `yarn dev` to start a local server
 
-Then make any UI changes into the Home.tsx file
+Then make any UI changes into the `Home.tsx` file
+
+Also be sure to update the title and description of your site in `index.html`
+
+## Deploy with Vercel
+
+We recommend you deploy to Vercel, as it's free, scalable and very easy to use.
+
+To do so:
+
+1. Create an account at vercel.com
+2. Install the vercel command line
+3. Run `vercel` on your project folder (generally the recommended configuration works)
+4. Go to the vercel console and configure the domain for your drop

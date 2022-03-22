@@ -4,12 +4,11 @@
 
 Create your NFT minting site for Solana Candy Machine, in less than 5 minutes.
 
-This repository contains a minimal UI front-end in React, for creating NFT drop sites for Solana Candy Machines. 
+This repository contains a minimal UI front-end in React, for creating NFT drop sites for Solana Candy Machines.
 
 It also includes the option to accept credit cards via Crossmint (which takes under 5 min to set up as well).
 
 <img width="544" alt="Example image" src="https://user-images.githubusercontent.com/93743232/155666012-2e0d3788-531f-435b-8466-4af89df816f7.png">
-
 
 ## Set up
 
@@ -34,9 +33,10 @@ Finally, in `<YOUR CANDY MACHINE PROGRAM ID>`, enter the candy machine ID you ob
 Accepting credit card payments allows you to sell to more customers who don't yet have a wallet, or are using their phones. With crossmint, accepting credit cards is free for you (seller), and you'll still receive all the funds instantly in SOL. [Learn more](https://www.crossmint.io)
 
 To accept credit card payments using crossmint:
+
 1. Register your NFT drop in https://www.crossmint.io/developers/onboarding (takes 2-3 min)
 2. Once you receive a client ID, enter it in your .env file as `REACT_APP_CROSSMINT_ID`
-3. Then, in Home.tsx., edit the `<CrossMintButton>` properties for your collection name, description and photo
+3. Then, in Home.tsx., edit the `<CrossmintPayButton>` properties for your collection name, description and photo
 
 You can now accept credit card payments -- and you'll get all the money from purchases in SOL, instantaneously when someone purchases!
 

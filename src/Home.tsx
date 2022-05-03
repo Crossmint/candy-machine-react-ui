@@ -212,14 +212,14 @@ const Home = (props: HomeProps) => {
               </MintContainer>
             </>
           )}
-          <p>{process.env.REACT_APP_CROSSMINT_ID}</p>
           {process.env.REACT_APP_CROSSMINT_ID && (
             <CrossmintPayButton
-              style={{ margin: "0 auto", width: "100%" }}
-              collectionTitle="<TITLE_FOR_YOUR_COLLECTION>"
-              collectionDescription="<DESCRIPTION_OF_YOUR_COLLECTION>"
-              collectionPhoto="<OPT_URL_TO_PHOTO_COVER>"
-              clientId={process.env.REACT_APP_CROSSMINT_ID}
+                style={{ margin: "0 auto", width: "100%" }}
+                collectionTitle="<TITLE_FOR_YOUR_COLLECTION>"
+                collectionDescription="<DESCRIPTION_OF_YOUR_COLLECTION>"
+                collectionPhoto="<OPT_URL_TO_PHOTO_COVER>"
+                clientId={process.env.REACT_APP_CROSSMINT_ID}
+                environment={process.env.REACT_APP_SOLANA_NETWORK === "devnet" && process.env.REACT_APP_SOLANA_RPC_HOST === "https://api.devnet.solana.com" ? "staging" : ""}
             />
           )}
         </Paper>

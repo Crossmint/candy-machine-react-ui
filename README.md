@@ -10,6 +10,14 @@ It also includes the option to accept credit cards via Crossmint (which takes un
 
 <img width="544" alt="Example image" src="https://user-images.githubusercontent.com/93743232/155666012-2e0d3788-531f-435b-8466-4af89df816f7.png">
 
+## Accept credit card payments
+
+Accepting credit card payments allows you to sell to more customers who don't yet have a wallet, or are using their phones. With crossmint, accepting credit cards is free for you (seller), and you'll still receive all the funds instantly in SOL.
+
+To get more in-depth integration instructions visit our [Solana Candy Machine documentation](https://docs.crossmint.io/accept-credit-cards/integration-guides/solana-candy-machine/b-i-have-an-existing-candy-machine-website).
+
+It takes less than 5 lines of code and 5 minutes to integrate.
+
 ## Set up
 
 Make sure you have `yarn` and `git` installed. Then run:
@@ -22,31 +30,19 @@ yarn
 
 ## Configure
 
-Copy the .env.template file into a file named .env
+Copy the `.env.template` file into a file named `.env`
 
 Then, uncomment either the "development" or "production" lines, depending on whether you are running a devnet candy machine or a production one.
 
 Finally, in `<YOUR CANDY MACHINE PROGRAM ID>`, enter the candy machine ID you obtained when uploading your assets. [More info](https://docs.metaplex.com/candy-machine-v2/creating-candy-machine)
 
-## Accept credit card payments
-
-Accepting credit card payments allows you to sell to more customers who don't yet have a wallet, or are using their phones. With crossmint, accepting credit cards is free for you (seller), and you'll still receive all the funds instantly in SOL. [Learn more](https://www.crossmint.io)
-
-To accept credit card payments using crossmint:
-
-1. Register your NFT drop in https://www.crossmint.io/developers/onboarding (takes 2-3 min)
-2. Once you receive a client ID, enter it in your .env file as `REACT_APP_CROSSMINT_ID`
-3. Then, in Home.tsx., edit the `<CrossmintPayButton>` properties for your collection name, description and photo
-
-You can now accept credit card payments -- and you'll get all the money from purchases in SOL, instantaneously when someone purchases!
-
 ## Develop
 
 Run `yarn dev` to start a local server
 
-Then make any UI changes into the `Home.tsx` file
+Then make any UI changes into the `src/Home.tsx` file
 
-Also be sure to update the title and description of your site in `index.html`
+Also be sure to update the title and description of your site in `public/index.html`
 
 ## Deploy with Vercel
 
